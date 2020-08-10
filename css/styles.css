@@ -1,0 +1,201 @@
+* {
+    margin    : 0;
+    padding   : 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size  : 1.1em;
+    line-height: 1.6;
+    color: rgb(167, 0, 42)
+}
+
+div img {
+    width: 450px;
+}
+
+main {
+    background-color: bisque;
+}
+
+#head {
+    background-image   : url("https://kartinkinaden.ru/uploads/posts/2020-07/thumbs/1593702368_33-p-gradientnii-fon-37.jpg");
+    height             : 100vh;
+    background-size    : cover;
+    background-position: center;
+    display            : flex;
+    flex-direction     : column;
+    justify-content    : center;
+    align-items        : center;
+    padding            : 0 1em;
+    text-align         : center;
+}
+
+.navbar .top-menu {
+    display : inline-block;
+    position: absolute;
+    right   : 0;
+    top     : 0;
+}
+
+.navbar .top-menu li {
+    display: inline;
+}
+
+.navbar .top-menu a {
+    font-size      : 2em;
+    padding        : 0.5em;
+    text-decoration: none ;
+    color          : rgb(0, 0, 0);
+}
+
+
+.top-menu a:hover {
+    background-color: rgba(128, 64, 64, .7);
+    color           : rgba(148, 207, 80, 0.7)
+}
+
+#head h1 {
+    font-size: 4em;
+    color: oldlace;
+}
+
+#head p {
+    font-size: 30px;
+    color: yellow;
+}
+
+#head .button {
+    font-size       : 1.5em;
+    text-decoration : none;
+    color           : whitesmoke;
+    border          : 6px solid darkgrey;
+    padding         : 10px 20px;
+    background-color: rgba(0, 139, 139, 0.4);
+    border-radius   : 10px;
+    margin          : 5%;
+}
+
+#head .button:hover {
+    background-color: rgb(177, 221, 94, .7);
+    color           : rgb(105, 72, 72);
+}
+
+.section-head {
+    padding-bottom: 1em;
+    color: rgb(167, 0, 42)
+}
+
+#section-a {
+    padding         : 1.5em;
+    background-color: rgba(0, 139, 139, 0.4);
+    color           : #000;
+    text-align      : center;
+    max-width       : 66%;
+    margin          : 0 auto;
+    border:         8px solid gray;
+    border-radius: 50px;
+    padding-bottom: 20px;
+}
+
+#section-b {
+    padding         : 1.5em;
+    background-color: rgba(139, 139, 139, 0.4);
+    color           : #000;
+    text-align      : center;
+    max-width       : 66%;
+    margin          : 0 auto;
+    border-radius: 50px;
+    border: 8px solid gray;
+}
+
+#section-c {
+    display        : flex;
+    max-width      : 66%;
+    margin         : 0 auto;
+    border-radius: 50px;
+}
+
+#section-c .box1,
+#section-c .box3 {
+    background-color: rgba(0, 139, 139, 0.4);
+    color           : whitesmoke;
+    padding         : 5px 20px;
+    border: rgba(148, 207, 80, 0.7);
+    border-radius: 20px;
+}
+
+#section-c .box2 {
+    padding         : 5px 20px;
+    background-color: rgba(139, 139, 139, 0.4);
+    color           : #000;
+    border-radius: 20px;
+}
+
+.lolses img {
+    max-width: 50%;
+    border-radius: 15px;
+    height: auto;
+    padding-bottom: 5px;
+    padding-top: 15px;
+}
+
+.main-footer {
+    display         : flex;
+    justify-content : space-around;
+    background-color: rgba(139, 139, 139, 1);
+    color           : rgba(20, 30, 90);
+}
+
+.foot-left,
+.foot-right {
+    padding: 1em 2em;
+}
+
+.sec-c {
+    margin: 0 auto;
+    text-align: center;
+    padding: 1.5em;
+    width: 900px;
+    background-color: rgb(56, 73, 59);
+    border-radius: 50px;
+}
+
+@media only screen and (max-width: 690px) {
+
+    .navbar .top-menu a {
+        font-size: 1.5em;
+    }
+
+    .navbar .top-menu {
+        position: absolute;
+        left    : 0;
+        top     : 0;
+
+    }
+
+    #section-a, #section-b, #section-c {
+        max-width: 900px;
+        border-radius: 50px;
+    }
+
+    #section-c {
+        flex-wrap: wrap;
+        border-radius: 50px;
+    }
+    
+    .sec-c {
+        width: 100vw;
+        border-radius: 50px;
+        border: rgba(139, 139, 139, 1);
+    }
+
+    .main-footer {
+        justify-content: space-between;
+    }
+
+    .foot-left,
+    .foot-right {
+        padding: 10px;
+    }
